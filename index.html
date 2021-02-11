@@ -1,0 +1,39 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>小钧博客 - 愿你出走半生，归来仍是少年</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<meta name="DEscription" content="小钧博客,一只正在学习Java的菜狗，是正在努力着的孩子.分享生活中的乐趣，分享互联网优秀软件、电脑经验、技术交流、IT类资讯等为一体的站小型博客站点，小钧博客尽力做到极致给小伙伴带来不一样的体验." />
+	<meta name="KEYWords" content="小钧博客,小钧导航,小钧互创,小钧笔记记录生活记录学习,小钧" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@double/mdui/css/mdui.min.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="icon" href="https://www.cuonc.com/favicon.ico">
+</head>
+<body>
+<div id="rin-bg"></div>
+<main id="rin-main">
+    <div id="rin-headimg"></div>
+    <div class="rin-name">XiaoJun Project</div>
+	<div id="hitokoto" class="rin-description">...</div>
+	<script>
+	fetch('https://v1.hitokoto.cn/?c=a').then(response => response.json()).then(data => {
+	const hitokoto = document.getElementById('hitokoto')
+	hitokoto.innerText = data.hitokoto
+	 }).catch(console.error)
+	</script>
+    <div class="rin-tr"></div>
+	<div class="rin-btn-div">
+		<a class="mdui-btn mdui-btn-raised rin-btn mdui-text-capitalize rin-btn-Home" href="detaile.html"><i class="fa fa-h-square"></i> More</a>
+		<a class="mdui-btn mdui-btn-raised rin-btn mdui-text-capitalize rin-btn-Blog" href="https://www.cuonc.com/" target="_blank"><i class="fa fa-modx"></i> Blog</a>
+	</div>
+    
+</main>
+<footer id="rin-footer">
+    <div>©2021 XiaoJun | Made With By Seirin | Background: <a href="https://www.pixiv.net/artworks/68912031" id="bg-link" target="_blank">Pixiv</a></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@double/mdui/js/mdui.min.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
