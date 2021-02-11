@@ -21,7 +21,7 @@ body {
     background-attachment: fixed;
     background-position: 50% 50%;
     background-color: #818181;
-    background-image: url('https://speed.cuonc.com/as/homepage/background.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/LjyLab/IndexPage@main/assets/img/background.jpg');
 }
 #rin-bg:after {
     top: 0;
